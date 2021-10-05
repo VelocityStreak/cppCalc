@@ -71,20 +71,19 @@ int main() {
 
     std::cin >> select;
 
-    if (select == 0) {
+    switch (select) {
+    case 0:
         add();
-    }
-
-    if (select == 1) {
+        break;
+    case 1:
         sub();
-    }
-
-    if (select == 2) {
+        break;
+    case 2:
         div();
-    }
-
-    if (select == 3) {
+        break;
+    case 3:
         multi();
+        break;
     }
     /*
     std::cout << "Do you want to run the program again? Enter yes for yes no for no [lower case]" << std::endl;
